@@ -10,7 +10,7 @@ public class Client{
 	/*
 	 * Methode zur Ausgabe einer Zahl auf der Console
 	 */
-	public void display( int aNumber ) throws Exception {
+	public void display( int aNumber ) {
 		// In dieser Methode soll die Methode translateNumber 
 		// mit dem übergegebenen Wert der Variable aNumber 
 		// aufgerufen werden.
@@ -18,7 +18,7 @@ public class Client{
 		GermanTranslator clientGT = Factory.createGermanTranslator();
 		String translatedNumber = clientGT.translateNumber(aNumber);
 		System.out.println("Das Ergebnis der Berechnung: " +
-				"[das Ergebnis an dieser Stelle]" );
+				"[" + translatedNumber + "]" );
 
 	}
 }

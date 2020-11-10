@@ -7,12 +7,12 @@ public class GermanTranslator implements Translator {
 	/**
 	 * Methode zur Übersetzung einer Zahl in eine String-Repraesentation
 	 */
-	public String translateNumber( int number ) throws Exception {
+	public String translateNumber( int number ){
 		try {
 			String[] translatedNum = {"eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn"};
 			return translatedNum[number - 1];
 		}catch(Exception e){
-			return "Übersetzung der Zahl " + number + "nicht möglich " + version;
+			return "Übersetzung der Zahl " + number + " nicht möglich " + version;
 		}
 	}
 
